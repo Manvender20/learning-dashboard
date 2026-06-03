@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Learning Dashboard
+
+A modern learning dashboard built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. The application provides a clean and responsive interface for tracking courses, monitoring learning activity, and viewing progress through an interactive dashboard.
+
+## Features
+
+* Responsive dashboard layout
+* Collapsible sidebar navigation
+* Hero section with personalized student information
+* Course progress tracking cards
+* Activity heatmap visualization
+* Smooth animations using Framer Motion
+* Reusable and scalable component architecture
+* Type-safe development with TypeScript
+* Modern dark-themed UI
+
+## Tech Stack
+
+* Next.js 15
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* Lucide React
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── dashboard/
+│   │   ├── HeroCard.tsx
+│   │   ├── CourseCard.tsx
+│   │   ├── ActivityCard.tsx
+│   │   └── DashboardGrid.tsx
+│   └── sidebar/
+│       ├── Sidebar.tsx
+│       └── SidebarItem.tsx
+│
+├── lib/
+│   ├── getStudent.ts
+│   ├── getCourses.ts
+│   └── mock-data.ts
+│
+└── types/
+    ├── student.ts
+    └── course.ts
+```
+
+## Dashboard Components
+
+### Hero Card
+
+Displays student information including:
+
+* Student name
+* Learning streak
+* Welcome message
+
+### Course Cards
+
+Displays:
+
+* Course title
+* Course icon
+* Completion percentage
+* Progress bar
+
+### Activity Card
+
+Displays:
+
+* Learning activity heatmap
+* Weekly consistency tracking
+
+### Sidebar
+
+Features:
+
+* Collapsible navigation
+* Route-based navigation
+* Active menu highlighting
+* Responsive design
+
+## Key Concepts Implemented
+
+* Component-based architecture
+* Reusable UI components
+* Props and data flow
+* Dynamic rendering with `.map()`
+* TypeScript interfaces
+* Responsive design principles
+* Animation and micro-interactions
+* Clean folder structure
 
 ## Getting Started
 
-First, run the development server:
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build for Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Enhancements
 
-## Learn More
+* Supabase integration
+* User authentication
+* Real-time course tracking
+* Database-driven content
+* Analytics dashboard
+* User profile management
 
-To learn more about Next.js, take a look at the following resources:
+## Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Manvender Pratap Singh
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built as a learning project to practice modern frontend development using the Next.js ecosystem.
