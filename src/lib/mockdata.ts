@@ -1,8 +1,9 @@
- export const student = {
-  id: 1,
-  name: "Manvender",
-  streak: 12,
-  created_at: "2025-01-01",
+export interface student {
+  id: number;
+  name: string;
+  email: string;
+  streak: number;
+  created_at: string;
 };
 
 
